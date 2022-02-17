@@ -58,23 +58,30 @@ while led>=360:
         time.sleep(.1)
         client.put_pixels(leds)
         led = led - 1 #or reverse if you want
-led = 59
+led = 29
 while led>=0:
     for rows in range(6):
         leds[led + rows*60] = (0,0,0)
 
-        time.sleep(.15)
+        time.sleep(.1)
         client.put_pixels(leds)
         led = led - 1
 
-led = 59
+led = 29
 while led>=0:
-    for rows in range(6):
-        leds[led - rows*60] = (0,0,0)
+ Run = True
+ for rows in range(6):
+        if led < 360:
+          leds[led - rows*60] = (0,0,0)
         
-        time.sleep(.15)
-        client.put_pixels(leds)
-        led = led + 1
+ time.sleep(.1)
+ client.put_pixels(leds)
+ led = led + 1
+ print (led)
+
+         else:
+           Run = False
+           break 
 
 for led in range(30): #pick out indeces: led = 0,1,2,3...
     leds[led] = (255,0,0)
