@@ -41,7 +41,7 @@ def menu():
 
         if Start.collidepoint((x, y)):
             if click:
-                # Call your functions here
+                starting()
                 print("Animation started")
 
         click = False
