@@ -1,0 +1,24 @@
+Hello, welcome to the anime opc.
+
+To run this you will need pyhpythonton and also opc to view the animation. You will be able to find the file
+ (https://github.com/RahalFerguson/the_project.git) "the_project/Fadecandy_2400-main/Fadecandy_2400-main/examples"
+inside this folder as "The Final". After you open that before you run it you must keep it open on python and go back to
+the GitHub link I have been provided above. Then must follow "the_project/Fadecandy_2400-main/Fadecandy_2400-main/simulator/bin/"
+after you reach there according to what operating system you are using you must open the folder and run the OPC file.
+if you don't do it you won't be able to watch the animation.
+
+#about the code hidden and the way to fix it.
+When you go through the OPC in the first place you will see there's a code that has been deactivated. That's the code
+that I have been developed to the GUI of this. It works perfectly, but the issue that I have been doing not used that is
+in the first place i have been developed the code and then built the GUI separately to ensure nothing will happen to the
+Final code, when it has been fully developed and used in the final OPC I run into an issue that is I can't run the code
+using "import time" instead of that I must "from time import sleep" if I use that I must change all the "time. sleep($$)" to
+"sleep($$)" because to me it's impossible to change all those and align the code into to places with the left time I didn't
+do that. But if you guys can, you can develop my file.
+
+#about how to play.
+The code you just need to run through python IDE, Pycharm or etc. also you must have a python above 3.0, this is only
+compatible with python 3.0 and above. When the first animation starts it will continue to the next animation automatically.
+However, after the 3rd animation (the line disparaging from middle to the left and then right side to the middle) there will
+be a short break for a few seconds before it starts the next animation. When all the animations are completely done
+"Process finished with exit code 0" text. 

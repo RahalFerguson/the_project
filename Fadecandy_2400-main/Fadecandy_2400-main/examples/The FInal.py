@@ -3930,4 +3930,27 @@ time.sleep(.3)
 
 leds = [(0, 0, 0)] * 360  # white
 
+leds[1] = (255, 255, 255)
+leds[61] = (255, 255, 255)
+leds[121] = (255, 255, 255)
+leds[181] = (255, 255, 255)
+leds[221] = (255, 255, 255)
+leds[281] = (255, 255, 255)
+leds[126+x]=(255,255,255)
+leds[127+x]=(255,255,255)
+leds[128+x]=(255,255,255)
+leds[185+x]=(255,255,255)#left hand
+leds[187+x]=(255,255,255)#left hand
+leds[189+x]=(255,255,255)#right hand
+leds[246+x]=(255,255,255)#right Hand
+leds[247+x]=(255,255,255)#left leg
+leds[248+x]=(255,255,255)#left leg
+leds[305+x]=(255,255,255)#right leg
+leds[309+x]=(255,255,255)#right leg
+
+client.put_pixels(leds)
+client.put_pixels(leds)
+
+time.sleep(.3)
+
 

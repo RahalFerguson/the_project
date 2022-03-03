@@ -7,11 +7,11 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
-led = 29
+led = 0
 Run = True
 while Run:
     for rows in range(6):
-        if led < 59:
+        if led < 30:
          leds[led + rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
@@ -23,11 +23,11 @@ while Run:
          Run= False
          break
 
-led = 29
+led = 0
 Run = True
 while Run:
     for rows in range(6):
-        if led < 60:
+        if led < 30:
          leds[led - rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
@@ -40,11 +40,11 @@ while Run:
          Run= False
          break
 
-led = 30
+led = 1
 Run = True
 while Run:
     for rows in range(6):
-        if led < 59:
+        if led < 30:
          leds[led + rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
@@ -56,11 +56,11 @@ while Run:
          Run= False
          break
 
-led = 30
+led = 1
 Run = True
 while Run:
     for rows in range(6):
-        if led < 60:
+        if led < 30:
          leds[led - rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
@@ -73,11 +73,11 @@ while Run:
          Run= False
          break
 
-led = 31
+led = 2
 Run = True
 while Run:
     for rows in range(6):
-        if led < 59:
+        if led < 30:
          leds[led + rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
@@ -89,11 +89,11 @@ while Run:
          Run= False
          break
 
-led = 31
+led = 2
 Run = True
 while Run:
     for rows in range(6):
-        if led < 60:
+        if led < 30:
          leds[led - rows * 60] = (255, 0, 0)
 
          time.sleep(.15)
